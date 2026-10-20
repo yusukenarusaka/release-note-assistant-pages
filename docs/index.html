@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LegalOn リリースノート下書き</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1c2938; background: #f4f7fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
+    main { width: min(640px, calc(100% - 32px)); padding: 40px; border-radius: 18px; background: white; box-shadow: 0 12px 35px #19345018; }
+    h1 { margin: 0 0 12px; font-size: 1.8rem; }
+    p, ol { line-height: 1.7; }
+    ol { padding-left: 1.4rem; }
+    a.button { display: inline-block; margin-top: 12px; padding: 14px 22px; border-radius: 9px; color: white; background: #1458a8; font-weight: 700; text-decoration: none; }
+    a.button:hover { background: #0d427e; }
+    small { display: block; margin-top: 22px; line-height: 1.7; color: #53677a; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LegalOn リリースノート下書き</h1>
+    <p>リリース情報を入力すると、書き方・表記ルールを参照して下書きを作成します。</p>
+    <ol>
+      <li>ボタンから非公開GitHubリポジトリの入力フォームを開く</li>
+      <li>リリース情報を入力してIssueを送信する</li>
+      <li>同じIssueのコメントで結果を確認する</li>
+    </ol>
+    <a class="button" href="https://github.com/yusukenarusaka/release-note-assistant-prototype/issues/new?template=release-note.yml">下書き作成を始める</a>
+    <small>GitHubへのサインインと非公開リポジトリへのアクセス権が必要です。入力内容と結果は非公開Issueに保存されます。この公開ページには社内資料やAPIキーを含めていません。</small>
+  </main>
+</body>
+</html>
